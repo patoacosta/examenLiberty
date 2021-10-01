@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EjercicioA{
 		
-	public EjercicioA() {
+	public static void inicio() {
 
 		boolean contiene = false;			
 		int sumaDigitos = 0;
@@ -30,7 +30,7 @@ public class EjercicioA{
 	}
 
 	
-		public boolean buscarDigito(char[] digitos) {
+		public static boolean buscarDigito(char[] digitos) {
 			boolean contiene = false;
 			for(int i = 0; i < digitos.length; i++) {
 				if(digitos[i] == '7') {
@@ -41,14 +41,16 @@ public class EjercicioA{
 		}
 		
 		
-		public int sumar(char[] digitos){
+		public static int sumar(char[] digitos){
 			int suma = 0;
 			for (int i = 0; i < digitos.length; i++) {
 				suma = suma + Character.getNumericValue(digitos[i]);
 			}
 			return suma;
 		}
+		
+		public static void main(String[] args) {
+			inicio();
+		}
 
 }
-
-
